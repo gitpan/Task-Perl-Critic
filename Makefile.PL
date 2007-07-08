@@ -2,17 +2,18 @@ use inc::Module::Install;
 
 name 'Task-Perl-Critic';
 author 'Elliot Shank <perl@galumph.com>';
-version '1.000';
+version '1.001';
 all_from 'lib/Task/Perl/Critic.pm';
 
-requires 'Perl::Critic'               => 1.052;
-requires 'Test::Perl::Critic'         => 1.01;
-requires 'criticism'                  => 1.01;
-requires 'Perl::Critic::More'         => 0;
-requires 'Perl::Critic::Bangs'        => 0;
-requires 'Perl::Critic::Lax'          => 0;
-requires 'Perl::Critic::StricterSubs' => 0;
-requires 'Perl::Critic::Swift'        => 0;
+requires 'Perl::Critic'                    => 1.06;
+requires 'Test::Perl::Critic'              => 1.01;
+requires 'Test::Perl::Critic::Progressive' => 0.02;
+requires 'criticism'                       => 1.01;
+requires 'Perl::Critic::More'              => 0;
+requires 'Perl::Critic::Bangs'             => 0;
+requires 'Perl::Critic::Lax'               => 0;
+requires 'Perl::Critic::StricterSubs'      => 0;
+requires 'Perl::Critic::Swift'             => 0;
 
 build_requires 'Test::More' => 0;
 

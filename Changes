@@ -1,3 +1,8 @@
+[1.001] Released on 2007-07-08.
+
+     Add Test::Perl::Critic::Progressive.
+     Update distribution versions.
+
 [1.000] Released on 2007-06-03.
 
      Initial version.
