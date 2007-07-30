@@ -1,3 +1,8 @@
+[1.002] Released on 2007-07-30.
+
+     Add Perl::Critic::Tics.
+     Update distribution versions.
+
 [1.001] Released on 2007-07-08.
 
      Add Test::Perl::Critic::Progressive.
@@ -8,6 +13,6 @@
      Initial version.
 
 #      $URL: http://perlcritic.tigris.org/svn/perlcritic/trunk/Task-Perl-Critic/Changes $
-#     $Date: 2007-06-03 07:58:32 -0500 (Sun, 03 Jun 2007) $
+#     $Date: 2007-07-08 10:04:27 -0500 (Sun, 08 Jul 2007) $
 #   $Author: clonezone $
-# $Revision: 1577 $
+# $Revision: 1736 $

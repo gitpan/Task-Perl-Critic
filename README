@@ -2,7 +2,7 @@ NAME
     Task::Perl::Critic - Install everything Perl::Critic.
 
 VERSION
-    This document describes Task::Perl::Critic version 1.1.0.
+    This document describes Task::Perl::Critic version 1.2.0.
 
 SYNOPSIS
     This module does nothing but act as a placeholder. See
@@ -32,6 +32,7 @@ DEPENDENCIES
     Perl::Critic::Lax
     Perl::Critic::StricterSubs
     Perl::Critic::Swift
+    Perl::Critic::Tics
 
 INCOMPATIBILITIES
     None reported.

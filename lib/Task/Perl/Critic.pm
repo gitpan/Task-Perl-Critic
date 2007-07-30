@@ -4,7 +4,7 @@ use 5.006001;
 use strict;
 use warnings;
 
-our $VERSION = 1.001;
+our $VERSION = 1.002;
 
 
 1; # Magic true value required at end of module
@@ -50,14 +50,24 @@ variables.
 =head1 DEPENDENCIES
 
 L<Perl::Critic>
+
 L<Test::Perl::Critic>
+
 L<Test::Perl::Critic::Progressive>
+
 L<criticism>
+
 L<Perl::Critic::More>
+
 L<Perl::Critic::Bangs>
+
 L<Perl::Critic::Lax>
+
 L<Perl::Critic::StricterSubs>
+
 L<Perl::Critic::Swift>
+
+L<Perl::Critic::Tics>
 
 
 =head1 INCOMPATIBILITIES
