@@ -4,7 +4,7 @@ use 5.006001;
 use strict;
 use warnings;
 
-our $VERSION = 1.003;
+our $VERSION = 1.004;
 
 
 1; # Magic true value required at end of module
@@ -97,8 +97,8 @@ Elliot Shank  C<< <perl@galumph.com> >>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright (C)2007, Elliot Shank C<< <perl@galumph.com> >>. All rights
-reserved.
+Copyright (C)2007-2008, Elliot Shank C<< <perl@galumph.com> >>. All
+rights reserved.
 
 This module is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself. See L<perlartistic>.

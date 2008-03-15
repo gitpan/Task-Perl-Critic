@@ -1,21 +1,22 @@
----
+--- #YAML:1.0
 name: Task-Perl-Critic
-version: v1.003
+version: 1.004
 author:
   - 'Elliot Shank <perl@galumph.com>'
 abstract: Install everything Perl::Critic.
 license: perl
+distribution_type: module
 resources:
   license: http://dev.perl.org/licenses/
 requires:
-  Perl::Critic: 1.061
-  Perl::Critic::Bangs: 0
-  Perl::Critic::Lax: 0
-  Perl::Critic::More: 0
-  Perl::Critic::Nits: 0
-  Perl::Critic::StricterSubs: 0
-  Perl::Critic::Swift: 0
-  Perl::Critic::Tics: 0
+  Perl::Critic: 1.082
+  Perl::Critic::Bangs: 0.22
+  Perl::Critic::Lax: 0.007
+  Perl::Critic::More: 0.16
+  Perl::Critic::Nits: 1
+  Perl::Critic::StricterSubs: 0.03
+  Perl::Critic::Swift: 1.000001
+  Perl::Critic::Tics: 0.004
   Test::Perl::Critic: 1.01
   Test::Perl::Critic::Progressive: 0.02
   criticism: 1.01
@@ -24,8 +25,8 @@ build_requires:
 provides:
   Task::Perl::Critic:
     file: lib/Task/Perl/Critic.pm
-    version: 1.003
-generated_by: Module::Build version 0.2808
+    version: 1.004
+generated_by: Hand
 meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.2.html
-  version: 1.2
+  version: 1.3
+  url: http://module-build.sourceforge.net/META-spec-v1.3.html
