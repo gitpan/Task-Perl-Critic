@@ -1,32 +1,36 @@
---- #YAML:1.0
+---
 name: Task-Perl-Critic
-version: 1.004
+version: 1.005
 author:
   - 'Elliot Shank <perl@galumph.com>'
 abstract: Install everything Perl::Critic.
 license: perl
-distribution_type: module
 resources:
+  MailingList: http://perlcritic.tigris.org/servlets/SummarizeList?listName=users
+  Repository: http://perlcritic.tigris.org/svn/perlcritic/trunk/Task-Perl-Critic/
+  homepage: http://perlcritic.com
   license: http://dev.perl.org/licenses/
 requires:
-  Perl::Critic: 1.082
-  Perl::Critic::Bangs: 0.22
+  Perl::Critic: 1.085
+  Perl::Critic::Bangs: 1.00
+  Perl::Critic::Compatibility: 1.000
   Perl::Critic::Lax: 0.007
-  Perl::Critic::More: 0.16
-  Perl::Critic::Nits: 1
+  Perl::Critic::More: 1.000
+  Perl::Critic::Nits: 1.000000
   Perl::Critic::StricterSubs: 0.03
-  Perl::Critic::Swift: 1.000001
-  Perl::Critic::Tics: 0.004
+  Perl::Critic::Swift: 1.000003
+  Perl::Critic::Tics: 0.005
   Test::Perl::Critic: 1.01
   Test::Perl::Critic::Progressive: 0.02
   criticism: 1.01
 build_requires:
   Test::More: 0
+dynamic_config: 0
 provides:
   Task::Perl::Critic:
     file: lib/Task/Perl/Critic.pm
-    version: 1.004
-generated_by: Hand
+    version: 1.005
+generated_by: Module::Build version 0.2808
 meta-spec:
-  version: 1.3
-  url: http://module-build.sourceforge.net/META-spec-v1.3.html
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2

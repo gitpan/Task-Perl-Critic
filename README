@@ -2,15 +2,21 @@ NAME
     Task::Perl::Critic - Install everything Perl::Critic.
 
 VERSION
-    This document describes Task::Perl::Critic version 1.2.0.
+    This document describes Task::Perl::Critic version 1.5.0.
 
 SYNOPSIS
-    This module does nothing but act as a placeholder. See
-    http://search.cpan.org/dist/Task/.
+    This module does nothing but act as a placeholder. See Task.
 
 DESCRIPTION
-    This module does nothing but act as a placeholder. See
-    http://search.cpan.org/dist/Task/.
+    This module does nothing but act as a placeholder. See Task.
+
+    WARNING: Installing this distribution will install Policies that
+    directly conflict with each other. If you do not use a .perlcriticrc
+    file, and your severity is set high enough, there is no way for your
+    code to not have violations. A specific example:
+    Perl::Critic::Policy::Compatibility::ProhibitThreeArgumentOpen and
+    Perl::Critic::Policy::InputOutput::ProhibitTwoArgOpen directly
+    contradict each other.
 
 INTERFACE
     None.
@@ -24,15 +30,32 @@ CONFIGURATION AND ENVIRONMENT
 
 DEPENDENCIES
     Perl::Critic
+
     Test::Perl::Critic
+
     Test::Perl::Critic::Progressive
+
     criticism
-    Perl::Critic::More
+
     Perl::Critic::Bangs
+
+    Perl::Critic::Compatibility
+
     Perl::Critic::Lax
+
+    Perl::Critic::More
+
+    Perl::Critic::Nits
+
     Perl::Critic::StricterSubs
+
     Perl::Critic::Swift
+
     Perl::Critic::Tics
+
+    In addition to the distributions referenced above, there is
+    Perl::Critic::Dynamic. This is not incorporated here because it actually
+    compiles code and is therefore potentially dangerous.
 
 INCOMPATIBILITIES
     None reported.
@@ -41,14 +64,14 @@ BUGS AND LIMITATIONS
     No bugs have been reported.
 
     Please report any bugs or feature requests to
-    "bug-task-perl-critic@rt.cpan.org", or through the web interface at
-    <http://rt.cpan.org>.
+    `bug-task-perl-critic@rt.cpan.org', or through the web interface at
+    http://rt.cpan.org.
 
 AUTHOR
-    Elliot Shank "<perl@galumph.com>"
+    Elliot Shank `<perl@galumph.com>'
 
 LICENSE AND COPYRIGHT
-    Copyright (C)2007, Elliot Shank "<perl@galumph.com>". All rights
+    Copyright (C)2007-2008, Elliot Shank `<perl@galumph.com>'. All rights
     reserved.
 
     This module is free software; you can redistribute it and/or modify it

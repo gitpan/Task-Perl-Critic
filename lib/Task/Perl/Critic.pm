@@ -4,7 +4,7 @@ use 5.006001;
 use strict;
 use warnings;
 
-our $VERSION = 1.004;
+our $VERSION = '1.005';
 
 
 1; # Magic true value required at end of module
@@ -18,7 +18,7 @@ Task::Perl::Critic - Install everything Perl::Critic.
 
 =head1 VERSION
 
-This document describes Task::Perl::Critic version 1.3.0.
+This document describes Task::Perl::Critic version 1.5.0.
 
 
 =head1 SYNOPSIS
@@ -29,6 +29,14 @@ This module does nothing but act as a placeholder.  See L<Task>.
 =head1 DESCRIPTION
 
 This module does nothing but act as a placeholder.  See L<Task>.
+
+B<WARNING>: Installing this distribution will install Policies that
+directly conflict with each other.  If you do not use a
+F<.perlcriticrc> file, and your severity is set high enough, there is
+no way for your code to not have violations.  A specific example:
+L<Perl::Critic::Policy::Compatibility::ProhibitThreeArgumentOpen> and
+L<Perl::Critic::Policy::InputOutput::ProhibitTwoArgOpen> directly
+contradict each other.
 
 
 =head1 INTERFACE
@@ -57,11 +65,13 @@ L<Test::Perl::Critic::Progressive>
 
 L<criticism>
 
-L<Perl::Critic::More>
-
 L<Perl::Critic::Bangs>
 
+L<Perl::Critic::Compatibility>
+
 L<Perl::Critic::Lax>
+
+L<Perl::Critic::More>
 
 L<Perl::Critic::Nits>
 

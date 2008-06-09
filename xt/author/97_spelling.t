@@ -1,9 +1,9 @@
 #!/usr/bin/env perl
 
-#      $URL: http://perlcritic.tigris.org/svn/perlcritic/trunk/Task-Perl-Critic/t/97_spelling.t $
-#     $Date: 2007-06-03 07:58:32 -0500 (Sun, 03 Jun 2007) $
+#      $URL: http://perlcritic.tigris.org/svn/perlcritic/trunk/Task-Perl-Critic/xt/author/97_spelling.t $
+#     $Date: 2008-06-08 21:46:45 -0500 (Sun, 08 Jun 2008) $
 #   $Author: clonezone $
-# $Revision: 1577 $
+# $Revision: 2431 $
 
 use strict;
 use warnings;

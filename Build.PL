@@ -1,13 +1,121 @@
-# Dear Distribution Packager. This use of require is intentional.
-# Module::Install detects Build.PL usage and acts accordingly.
-
-require 'Makefile.PL';
+#!perl
 
 #      $URL: http://perlcritic.tigris.org/svn/perlcritic/trunk/Task-Perl-Critic/Build.PL $
-#     $Date: 2007-06-03 07:58:32 -0500 (Sun, 03 Jun 2007) $
+#     $Date: 2008-06-08 21:46:45 -0500 (Sun, 08 Jun 2008) $
 #   $Author: clonezone $
-# $Revision: 1577 $
+# $Revision: 2431 $
 
+use 5.006;
+
+use strict;
+use warnings;
+
+use English qw< -no_match_vars >;
+
+use Module::Build;
+
+
+my $class = Module::Build->subclass( code => <<'END_SUBCLASS' );
+
+    sub ACTION_test {
+        my ($self) = @_;
+
+        $self->depends_on('manifest');
+
+        return $self->SUPER::ACTION_test();
+    }
+
+    sub ACTION_authortest {
+        my ($self) = @_;
+
+        $self->depends_on('build');
+        $self->depends_on('manifest');
+        $self->depends_on('distmeta');
+
+        $self->test_files( qw< t xt/author > );
+        $self->recursive_test_files(1);
+
+        $self->depends_on('test');
+
+        return;
+    } # end ACTION_authortest()
+
+    sub ACTION_distdir {
+        my ($self) = @_;
+
+        $self->depends_on('authortest');
+
+        return $self->SUPER::ACTION_distdir();
+    } # end ACTION_distdir
+
+END_SUBCLASS
+
+my $builder = $class->new(
+    module_name         => 'Task::Perl::Critic',
+    dist_author         => 'Elliot Shank <perl@galumph.com>',
+    license             => 'perl',
+    dynamic_config      => 0,
+    create_readme       => 1,
+    create_packlist     => 1,
+    sign                => 0,
+
+    requires            => {
+        'Perl::Critic'                      => '1.085',
+        'Test::Perl::Critic'                => 1.01,
+        'Test::Perl::Critic::Progressive'   => 0.02,
+        'criticism'                         => 1.01,
+        'Perl::Critic::Bangs'               => '1.00',
+        'Perl::Critic::Compatibility'       => '1.000',
+        'Perl::Critic::Lax'                 => '0.007',
+        'Perl::Critic::More'                => '1.000',
+        'Perl::Critic::Nits'                => '1.000000',
+        'Perl::Critic::StricterSubs'        => 0.03,
+        'Perl::Critic::Swift'               => '1.000003',
+        'Perl::Critic::Tics'                => '0.005',
+    },
+
+    build_requires      => {
+        'Test::More'    => 0,
+    },
+
+    recommends          => {
+    },
+
+    create_packlist     => 1,
+
+    sign                => 0,
+
+    create_makefile_pl  => 'traditional',
+
+    meta_merge          => {
+        resources   => {
+            homepage    => 'http://perlcritic.com',
+            license     => 'http://dev.perl.org/licenses/',
+            Repository  => 'http://perlcritic.tigris.org/svn/perlcritic/trunk/Task-Perl-Critic/',
+            MailingList => 'http://perlcritic.tigris.org/servlets/SummarizeList?listName=users',
+        }
+    },
+
+    add_to_cleanup      => [
+        qw<
+            MANIFEST
+            MANIFEST.bak
+            META.yml
+            Makefile
+            Makefile.old
+            Makefile.PL
+            pod2htm?.tmp
+            pm_to_blib
+            README
+            Task-Perl-Critic-*
+        >,
+    ],
+);
+
+
+$builder->create_build_script();
+
+##############################################################################
 # Local Variables:
 #   mode: cperl
 #   cperl-indent-level: 4
@@ -15,4 +123,6 @@ require 'Makefile.PL';
 #   indent-tabs-mode: nil
 #   c-indentation-style: bsd
 # End:
-# ex: set ts=8 sts=4 sw=4 tw=78 ft=perl expandtab :
+# setup vim: set filetype=perl tabstop=4 softtabstop=4 expandtab :
+# setup vim: set shiftwidth=4 shiftround textwidth=78 nowrap autoindent :
+# setup vim: set foldmethod=indent foldlevel=0 :
