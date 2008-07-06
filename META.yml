@@ -1,6 +1,6 @@
 ---
 name: Task-Perl-Critic
-version: 1.005
+version: 1.006
 author:
   - 'Elliot Shank <perl@galumph.com>'
 abstract: Install everything Perl::Critic.
@@ -17,6 +17,8 @@ requires:
   Perl::Critic::Lax: 0.007
   Perl::Critic::More: 1.000
   Perl::Critic::Nits: 1.000000
+  Perl::Critic::PetPeeves::JTRAMMELL: 0.01
+  Perl::Critic::Pulp: 3
   Perl::Critic::StricterSubs: 0.03
   Perl::Critic::Swift: 1.000003
   Perl::Critic::Tics: 0.005
@@ -29,8 +31,8 @@ dynamic_config: 0
 provides:
   Task::Perl::Critic:
     file: lib/Task/Perl/Critic.pm
-    version: 1.005
-generated_by: Module::Build version 0.2808
+    version: 1.006
+generated_by: Module::Build version 0.280801
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
   version: 1.2

@@ -1,11 +1,11 @@
 #!perl
 
 #      $URL: http://perlcritic.tigris.org/svn/perlcritic/trunk/Task-Perl-Critic/Build.PL $
-#     $Date: 2008-06-08 21:46:45 -0500 (Sun, 08 Jun 2008) $
+#     $Date: 2008-07-06 06:56:15 -0500 (Sun, 06 Jul 2008) $
 #   $Author: clonezone $
-# $Revision: 2431 $
+# $Revision: 2498 $
 
-use 5.006;
+use 5.006001;
 
 use strict;
 use warnings;
@@ -60,18 +60,20 @@ my $builder = $class->new(
     sign                => 0,
 
     requires            => {
-        'Perl::Critic'                      => '1.085',
-        'Test::Perl::Critic'                => 1.01,
-        'Test::Perl::Critic::Progressive'   => 0.02,
-        'criticism'                         => 1.01,
-        'Perl::Critic::Bangs'               => '1.00',
-        'Perl::Critic::Compatibility'       => '1.000',
-        'Perl::Critic::Lax'                 => '0.007',
-        'Perl::Critic::More'                => '1.000',
-        'Perl::Critic::Nits'                => '1.000000',
-        'Perl::Critic::StricterSubs'        => 0.03,
-        'Perl::Critic::Swift'               => '1.000003',
-        'Perl::Critic::Tics'                => '0.005',
+        'Perl::Critic'                          => '1.085',
+        'Test::Perl::Critic'                    => 1.01,
+        'Test::Perl::Critic::Progressive'       => 0.02,
+        'criticism'                             => 1.01,
+        'Perl::Critic::Bangs'                   => '1.00',
+        'Perl::Critic::Compatibility'           => '1.000',
+        'Perl::Critic::Lax'                     => '0.007',
+        'Perl::Critic::More'                    => '1.000',
+        'Perl::Critic::Nits'                    => '1.000000',
+        'Perl::Critic::PetPeeves::JTRAMMELL'    => '0.01',
+        'Perl::Critic::Pulp'                    => 3,
+        'Perl::Critic::StricterSubs'            => 0.03,
+        'Perl::Critic::Swift'                   => '1.000003',
+        'Perl::Critic::Tics'                    => '0.005',
     },
 
     build_requires      => {

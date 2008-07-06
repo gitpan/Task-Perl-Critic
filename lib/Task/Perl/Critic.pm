@@ -4,7 +4,7 @@ use 5.006001;
 use strict;
 use warnings;
 
-our $VERSION = '1.005';
+our $VERSION = '1.006';
 
 
 1; # Magic true value required at end of module
@@ -18,7 +18,7 @@ Task::Perl::Critic - Install everything Perl::Critic.
 
 =head1 VERSION
 
-This document describes Task::Perl::Critic version 1.5.0.
+This document describes Task::Perl::Critic version 1.6.0.
 
 
 =head1 SYNOPSIS
@@ -74,6 +74,10 @@ L<Perl::Critic::Lax>
 L<Perl::Critic::More>
 
 L<Perl::Critic::Nits>
+
+L<Perl::Critic::PetPeeves::JTRAMMELL>
+
+L<Perl::Critic::Pulp>
 
 L<Perl::Critic::StricterSubs>
 

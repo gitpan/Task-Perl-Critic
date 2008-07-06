@@ -1,33 +1,39 @@
+[1.006] Released on 2008-07-06.
+
+    Add Perl::Critic::PetPeeves::JTRAMMELL.
+
+    "use 5.006001" in Makefile.PL and Build.PL.
+
 [1.005] Released on 2008-06-08.
 
-     Add Perl::Critic::Compatibility.
+    Add Perl::Critic::Compatibility.
 
-     Replace use of Module::Install with Module::Build.
+    Replace use of Module::Install with Module::Build.
 
 [1.004] Released on 2008-03-15.
 
-     Up Perl::Critic prerequisite to 1.082 and specify revisions for
-     all the other distros.
+    Up Perl::Critic prerequisite to 1.082 and specify revisions for
+    all the other distros.
 
 [1.003] Released on 2007-09-15.
 
-     Add Perl::Critic::Nits.
+    Add Perl::Critic::Nits.
 
 [1.002] Released on 2007-07-30.
 
-     Add Perl::Critic::Tics.
-     Update distribution versions.
+    Add Perl::Critic::Tics.
+    Update distribution versions.
 
 [1.001] Released on 2007-07-08.
 
-     Add Test::Perl::Critic::Progressive.
-     Update distribution versions.
+    Add Test::Perl::Critic::Progressive.
+    Update distribution versions.
 
 [1.000] Released on 2007-06-03.
 
-     Initial version.
+    Initial version.
 
 #      $URL: http://perlcritic.tigris.org/svn/perlcritic/trunk/Task-Perl-Critic/Changes $
-#     $Date: 2008-06-08 21:58:28 -0500 (Sun, 08 Jun 2008) $
+#     $Date: 2008-07-06 07:13:15 -0500 (Sun, 06 Jul 2008) $
 #   $Author: clonezone $
-# $Revision: 2432 $
+# $Revision: 2501 $
