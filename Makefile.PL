@@ -8,21 +8,22 @@ WriteMakefile
           'EXE_FILES' => [],
           'VERSION_FROM' => 'lib/Task/Perl/Critic.pm',
           'PREREQ_PM' => {
-                           'Perl::Critic::Tics' => '0.005',
+                           'Perl::Critic::Storable' => 0,
                            'Perl::Critic::PetPeeves::JTRAMMELL' => '0.01',
                            'Test::Perl::Critic::Progressive' => '0.02',
                            'Test::Perl::Critic' => '1.01',
-                           'Test::More' => 0,
-                           'Perl::Critic::Nits' => '1.000000',
                            'Perl::Critic::Compatibility' => '1.000',
-                           'Perl::Critic' => '1.085',
                            'Perl::Critic::Swift' => '1.000003',
-                           'Perl::Critic::Pulp' => 3,
                            'Perl::Critic::Lax' => '0.007',
                            'criticism' => '1.01',
                            'Perl::Critic::Bangs' => '1.00',
                            'Perl::Critic::StricterSubs' => '0.03',
-                           'Perl::Critic::More' => '1.000'
+                           'Perl::Critic::More' => '1.000',
+                           'Perl::Critic::Tics' => '0.005',
+                           'Test::More' => 0,
+                           'Perl::Critic::Nits' => '1.000000',
+                           'Perl::Critic' => '1.085',
+                           'Perl::Critic::Pulp' => 3
                          }
         )
 ;

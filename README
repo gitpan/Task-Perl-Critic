@@ -51,6 +51,8 @@ DEPENDENCIES
 
     Perl::Critic::Pulp
 
+    Perl::Critic::Storable
+
     Perl::Critic::StricterSubs
 
     Perl::Critic::Swift

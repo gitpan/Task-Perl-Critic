@@ -71,6 +71,7 @@ my $builder = $class->new(
         'Perl::Critic::Nits'                    => '1.000000',
         'Perl::Critic::PetPeeves::JTRAMMELL'    => '0.01',
         'Perl::Critic::Pulp'                    => 3,
+        'Perl::Critic::Storable'                => 0,
         'Perl::Critic::StricterSubs'            => 0.03,
         'Perl::Critic::Swift'                   => '1.000003',
         'Perl::Critic::Tics'                    => '0.005',

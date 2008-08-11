@@ -4,7 +4,7 @@ use 5.006001;
 use strict;
 use warnings;
 
-our $VERSION = '1.006';
+our $VERSION = '1.007';
 
 
 1; # Magic true value required at end of module
@@ -78,6 +78,8 @@ L<Perl::Critic::Nits>
 L<Perl::Critic::PetPeeves::JTRAMMELL>
 
 L<Perl::Critic::Pulp>
+
+L<Perl::Critic::Storable>
 
 L<Perl::Critic::StricterSubs>
 
