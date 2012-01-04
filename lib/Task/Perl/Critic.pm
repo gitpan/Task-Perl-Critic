@@ -4,7 +4,7 @@ use 5.006001;
 use strict;
 use warnings;
 
-our $VERSION = '1.007';
+our $VERSION = '1.008';
 
 
 1; # Magic true value required at end of module
@@ -18,7 +18,7 @@ Task::Perl::Critic - Install everything Perl::Critic.
 
 =head1 VERSION
 
-This document describes Task::Perl::Critic version 1.6.0.
+This document describes Task::Perl::Critic version 1.8.0.
 
 
 =head1 SYNOPSIS
@@ -69,7 +69,13 @@ L<Perl::Critic::Bangs>
 
 L<Perl::Critic::Compatibility>
 
+L<Perl::Critic::Dynamic>
+
+L<Perl::Critic::Itch>
+
 L<Perl::Critic::Lax>
+
+L<Perl::Critic::Moose>
 
 L<Perl::Critic::More>
 
@@ -86,10 +92,6 @@ L<Perl::Critic::StricterSubs>
 L<Perl::Critic::Swift>
 
 L<Perl::Critic::Tics>
-
-In addition to the distributions referenced above, there is
-L<Perl::Critic::Dynamic>.  This is not incorporated here because it
-actually compiles code and is therefore potentially dangerous.
 
 
 =head1 INCOMPATIBILITIES

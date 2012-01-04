@@ -2,7 +2,7 @@ NAME
     Task::Perl::Critic - Install everything Perl::Critic.
 
 VERSION
-    This document describes Task::Perl::Critic version 1.6.0.
+    This document describes Task::Perl::Critic version 1.8.0.
 
 SYNOPSIS
     This module does nothing but act as a placeholder. See Task.
@@ -41,7 +41,13 @@ DEPENDENCIES
 
     Perl::Critic::Compatibility
 
+    Perl::Critic::Dynamic
+
+    Perl::Critic::Itch
+
     Perl::Critic::Lax
+
+    Perl::Critic::Moose
 
     Perl::Critic::More
 
@@ -58,10 +64,6 @@ DEPENDENCIES
     Perl::Critic::Swift
 
     Perl::Critic::Tics
-
-    In addition to the distributions referenced above, there is
-    Perl::Critic::Dynamic. This is not incorporated here because it actually
-    compiles code and is therefore potentially dangerous.
 
 INCOMPATIBILITIES
     None reported.

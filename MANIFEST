@@ -1,13 +1,14 @@
 Build.PL
 Changes
+Debian_CPANTS.txt
 lib/Task/Perl/Critic.pm
 LICENSE
 MANIFEST			This list of files
+META.json
 t/00_load.t
 t/98_pod_syntax.t
 t/99_pod_coverage.t
 xt/author/95_kwalitee.t
-xt/author/97_spelling.t
 Makefile.PL
 README
 META.yml

@@ -1,9 +1,9 @@
 #!perl
 
-#      $URL: http://perlcritic.tigris.org/svn/perlcritic/trunk/Task-Perl-Critic/Build.PL $
-#     $Date: 2008-07-06 06:56:15 -0500 (Sun, 06 Jul 2008) $
-#   $Author: clonezone $
-# $Revision: 2498 $
+#      $URL: http://perlcritic.tigris.org/svn/perlcritic/tags/Task-Perl-Critic-1.008/Build.PL $
+#     $Date: 2012-01-04 10:40:20 -0800 (Wed, 04 Jan 2012) $
+#   $Author: thaljef $
+# $Revision: 4111 $
 
 use 5.006001;
 
@@ -16,14 +16,6 @@ use Module::Build;
 
 
 my $class = Module::Build->subclass( code => <<'END_SUBCLASS' );
-
-    sub ACTION_test {
-        my ($self) = @_;
-
-        $self->depends_on('manifest');
-
-        return $self->SUPER::ACTION_test();
-    }
 
     sub ACTION_authortest {
         my ($self) = @_;
@@ -55,18 +47,21 @@ my $builder = $class->new(
     dist_author         => 'Elliot Shank <perl@galumph.com>',
     license             => 'perl',
     dynamic_config      => 0,
-    create_readme       => 1,
     create_packlist     => 1,
+    create_readme       => 1,
     sign                => 0,
 
     requires            => {
-        'Perl::Critic'                          => '1.085',
-        'Test::Perl::Critic'                    => 1.01,
-        'Test::Perl::Critic::Progressive'       => 0.02,
-        'criticism'                             => 1.01,
+        'Perl::Critic'                          => '1.117',
+        'Test::Perl::Critic'                    => '1.02',
+        'Test::Perl::Critic::Progressive'       => '0.03',
+        'criticism'                             => '1.02',
         'Perl::Critic::Bangs'                   => '1.00',
         'Perl::Critic::Compatibility'           => '1.000',
+        'Perl::Critic::Dynamic'                 => '0.05',
+        'Perl::Critic::Itch'                    => 0,
         'Perl::Critic::Lax'                     => '0.007',
+        'Perl::Critic::Moose'                   => 0,
         'Perl::Critic::More'                    => '1.000',
         'Perl::Critic::Nits'                    => '1.000000',
         'Perl::Critic::PetPeeves::JTRAMMELL'    => '0.01',
@@ -84,17 +79,13 @@ my $builder = $class->new(
     recommends          => {
     },
 
-    create_packlist     => 1,
-
-    sign                => 0,
-
     create_makefile_pl  => 'traditional',
 
     meta_merge          => {
         resources   => {
             homepage    => 'http://perlcritic.com',
             license     => 'http://dev.perl.org/licenses/',
-            Repository  => 'http://perlcritic.tigris.org/svn/perlcritic/trunk/Task-Perl-Critic/',
+            repository  => 'http://guest@perlcritic.tigris.org/svn/perlcritic/trunk/distributions/Task-Perl-Critic/',
             MailingList => 'http://perlcritic.tigris.org/servlets/SummarizeList?listName=users',
         }
     },
